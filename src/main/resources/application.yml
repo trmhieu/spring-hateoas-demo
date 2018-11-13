@@ -1,0 +1,17 @@
+spring:
+  profiles.active: hateoas
+  logging.level:
+    root: ERROR
+    org.hibernate.SQL: DEBUG
+    com.hieutm.demo.spring.hateoas: INFO
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.H2Dialect
+    hibernate.ddl-auto: update
+    show-sql: true
+  h2.console:
+    enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
