@@ -23,9 +23,9 @@ public class Comment {
   private Long id;
   @NotNull
   private String content;
-  @ManyToOne(cascade = CascadeType.REMOVE)
+  @ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.LAZY)
   @JoinColumn(name = "post_id", nullable = false)
-//  @JsonIgnore
+  @JsonIgnore
   private Post post;
 
   public Comment(@NotNull String content, Post post) {
