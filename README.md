@@ -1,7 +1,18 @@
 # spring-hateoas-demo
 Demo Spring HATEOAS basic
 
-Examples:
+### Build
+  ```
+  mvn clean install
+  ```
+
+### Run
+  ```
+  java -jar target/spring-hateoas-demo-0.0.1-SNAPSHOT.jar
+  ```
+  Open any REST client tool and enjoy!
+
+### Some examples:
 
    * Get all posts
    
